@@ -1,13 +1,6 @@
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap");
-
-.jacquard-12-regular {
-  font-family: "Jacquard 12", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
 
 .covered-by-your-grace-regular {
   font-family: "Covered By Your Grace", cursive;
@@ -23,12 +16,16 @@
 
 @theme {
   --color-dark-paper: #202020;
+  --color-half-dark-paper: #4f4f4f;
   --color-grey-paper: #969696;
+  --color-half-light-paper: #e6e6e6;
   --color-light-paper: #f1f1f1;
 
-  --filter-dark-paper: brightness(95%);
+  --filter-dark-paper: brightness(13%);
   --filter-grey-paper: brightness(59%);
-  --filter-light-paper: brightness(13%);
+  --filter-light-paper: brightness(95%);
+
+  --drop-shadow-cartoon: -2px 2px 0 rgba(0, 0, 0, 0.5);
 }
 
 :root {
@@ -38,10 +35,73 @@
   font-size: 18px;
 }
 
+.bg-pattern {
+  background-color: var(--color-light-paper);
+  opacity: 1;
+  background-image:
+    radial-gradient(circle, var(--color-grey-paper) 0.96px, transparent 0.96px),
+    radial-gradient(circle, var(--color-grey-paper) 0.96px, transparent 0.96px);
+  background-size:
+    6px 24px,
+    24px 6px;
+  background-position:
+    -3px -12px,
+    -12px -3px;
+  mask-image: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0) 40%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+  -webkit-mask-image: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0) 40%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+  mask-size: 100% 100%;
+  -webkit-mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+
+.menu-pattern {
+  background-color: var(--color-half-light-paper);
+  opacity: 1;
+  background-size: 24px 24px;
+  background-image: repeating-linear-gradient(
+    0deg,
+    var(--color-grey-paper),
+    var(--color-grey-paper) 1.2px,
+    transparent 1.2px,
+    transparent
+  );
+  mask-image: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0) 40%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  -webkit-mask-image: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0) 40%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  mask-size: 100% 100%;
+  -webkit-mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     background-color: var(--color-dark-paper);
     color: var(--color-light-paper);
+  }
+
+  .bg-pattern {
+    background-color: var(--color-dark-paper);
+  }
+
+  .menu-pattern {
+    background-color: var(--color-half-dark-paper);
   }
 }
 
