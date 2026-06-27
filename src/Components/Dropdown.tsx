@@ -14,7 +14,7 @@ function Dropdown(props: { sections: Record<string, string> }) {
           {Object.keys(props.sections).map((key) => (
             <li
               key={key}
-              className="hover:scale-110 duration-300 ease-in-out lg:landscape:inline text-dark-paper dark:text-light-paper focus:text-light-paper focus:dark:text-dark-paper hover:text-light-paper hover:dark:text-dark-paper bg-half-light-paper dark:bg-half-dark-paper lg:landscape:bg-transparent lg:dark:landscape:bg-transparent hover:bg-half-dark-paper hover:dark:bg-light-paper p-5 cursor-pointer"
+              className="hover:scale-110 hover:-translate-x-1/12 duration-300 ease-in-out lg:landscape:inline text-dark-paper dark:text-light-paper focus:text-light-paper focus:dark:text-dark-paper hover:text-light-paper hover:dark:text-dark-paper bg-half-light-paper dark:bg-half-dark-paper lg:landscape:bg-transparent lg:dark:landscape:bg-transparent hover:bg-half-dark-paper hover:dark:bg-light-paper p-5 cursor-pointer"
               onClick={() => changeSection(key)}
             >
               {props.sections[key]}

@@ -1,9 +1,9 @@
 @import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
 
-.covered-by-your-grace-regular {
-  font-family: "Covered By Your Grace", cursive;
+.patrick-hand-regular {
+  font-family: "Patrick Hand", cursive;
   font-weight: 400;
   font-style: normal;
 }
@@ -25,13 +25,13 @@
   --filter-grey-paper: brightness(59%);
   --filter-light-paper: brightness(95%);
 
-  --drop-shadow-cartoon: -2px 2px 0 rgba(0, 0, 0, 0.5);
+  --drop-shadow-cartoon: -2px 2px 0.3px rgba(0, 0, 0, 0.2);
 }
 
 :root {
   background-color: var(--color-light-paper);
   color: var(--color-dark-paper);
-  font-family: "Covered By Your Grace", cursive;
+  font-family: "Patrick Hand", cursive;
   font-size: 18px;
 }
 

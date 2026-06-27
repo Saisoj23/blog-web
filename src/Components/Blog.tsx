@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { ChangeBlogContext } from "./ChangeSectionContext";
 import { ARTICLES, type ArticleTemplate } from "./ARTICLES";
 import Article from "./Article";
+import ArticleCard from "./ArticleCard";
 
 function Blog() {
   const [blogId, setBlogId] = useState(0);
@@ -13,22 +14,20 @@ function Blog() {
 
   return (
     <ChangeBlogContext value={changeBlog}>
-      <main className="flex flex-col flex-start flex-1">
+      <main className="flex flex-col items-start flex-1 p-4">
         {blogId === 0 ? (
-          <ul>
-            {" "}
+          <div className="w-full grid sm:grid-cols-1 md:grid-cols-2  lg:grid-cols-4">
             {ARTICLES.map((post) => (
-              <li
-                key={post.id}
-                onClick={() => {
-                  console.log(post.id);
+              <ArticleCard
+                title={post.title}
+                excerpt={post.excerpt}
+                thumbnail={post.thumbnail}
+                callback={() => {
                   changeBlog(post.id);
                 }}
-              >
-                {post.title}
-              </li>
-            ))}{" "}
-          </ul>
+              />
+            ))}
+          </div>
         ) : (
           <Article article={ARTICLES.at(blogId - 1) as ArticleTemplate} />
         )}

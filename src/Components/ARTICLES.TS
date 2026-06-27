@@ -1,85 +1,57 @@
 export const ARTICLES = [
   {
     id: 1,
-    title: "First Blog Post",
-    excerpt: "This is a short intro to the first blog post.",
-    content: "This is the full content of the first blog post. Welcome!",
+    title: "El Primer Salto",
+    thumbnail: "Chess Labyrinths thumnnail.png",
+    logo: "chesslabyrinths.png",
+    images: ["chess1.png", "chess2.png", "chess3.png"],
+    excerpt: "Cómo después de 3 meses completé mi primer videojuego.",
+    content:
+      "<b>Chess Labyrinths</b> fue el primer videojuego que desarrollé. Lo creé cuando tenía 15 años como mi primer proyecto personal y una forma de aprender desarrollo de videojuegos desde cero. Con los pocos conocimientos que tenía de Blender en ese momento, modelé las piezas de ajedrez y varios de los obstáculos, y construí un pequeño juego de puzzles compuesto por 20 niveles. El objetivo es guiar una pieza de ajedrez hasta la meta para avanzar al siguiente desafío. El desarrollo tomó aproximadamente tres meses y, al finalizarlo, logré publicarlo en Google Play, marcando mi primera experiencia lanzando un videojuego.",
+    gamelink: "https://saisoj.itch.io/chesslabyrinths",
   },
   {
     id: 2,
-    title: "Second Blog Post",
-    excerpt: "A quick teaser of the second post...",
-    content: "Full content of the second blog post goes here.",
+    title: "El Juego Imposible",
+    thumbnail: "AXYSHELL thumnnail.png",
+    logo: "axyshell.png",
+    images: ["axys1.png", "axys2.png", "axys3.png"],
+    excerpt: "EL interrumpido desarrollo de un juego muy frustrante",
+    content:
+      "Después de completar mi primer juego, rápidamente comencé a experimentar con nuevas mecánicas para mi siguiente proyecto. Inspirado por una de las mecánicas de <i>Undertale,</i> desarrollé <b>AXYS HELL,</b> un juego casual de reflejos en el que el objetivo es proteger un círculo rojo de flechas que lo atacan desde las cuatro direcciones. Mi idea inicial era crear una gran cantidad de niveles, pero con el tiempo tuve que ajustar el alcance del proyecto y finalmente terminé desarrollando cuatro. El proceso llevó aproximadamente seis meses, con algunas interrupciones en el medio, y me permitió seguir aprendiendo sobre diseño de mecánicas, dificultad y desarrollo de videojuegos.</p><p>La principal característica de este proyecto fue su elevada dificultad. A partir del tercer nivel, la curva de aprendizaje se vuelve considerablemente más exigente, alcanzando un punto que muchos jugadores pueden encontrar frustrante. Con el tiempo comprendí que el balance de la dificultad es un aspecto fundamental en el diseño de un videojuego, y sin duda es algo que corregiría en una posible secuela para ofrecer una experiencia más equilibrada sin perder el desafío.",
+    gamelink: "https://saisoj.itch.io/axyshell",
   },
   {
     id: 3,
-    title: "Cómo elegir la camiseta de fútbol perfecta",
-    excerpt:
-      "Descubre qué aspectos debes considerar antes de comprar una camiseta.",
+    title: "Experimentación Open Source",
+    thumbnail: "Godot FPS thumbnail.png",
+    logo: "godotfps.png",
+    images: ["fps1.png", "fps2.png", "fps3.png"],
+    excerpt: "El corto camino que recorrí con Godot.",
     content:
-      "Elegir una camiseta de fútbol va más allá del diseño. Es importante considerar la calidad del tejido, el ajuste, la autenticidad de los detalles y el uso que le darás. Una buena camiseta no solo representa a tu equipo, sino que también ofrece comodidad y durabilidad.",
+      "Esta pequeña demo fue el resultado de un período de experimentación, tanto con el género de los puzles en primera persona —principalmente inspirado en <i>Portal—</i> como con el motor Godot. El resultado fue un juego corto ambientado en una única habitación, donde el objetivo es desbloquear una puerta utilizando dos cubos de colores que funcionan como llaves al activar distintos interruptores. Además, incluí un pequeño rincón con ladrillos para poner a prueba las capacidades del motor de físicas y experimentar con las interacciones entre objetos.",
+    gamelink: "https://saisoj.itch.io/godot-fps-puzzle",
   },
   {
-    id: 5,
-    title: "¿Cómo cuidar tu camiseta para que dure más?",
-    excerpt: "Algunos consejos simples para mantener tus prendas como nuevas.",
+    id: 4,
+    title: "El Juego Soñado",
+    thumbnail: "Heckernaut thumnnail.png",
+    logo: "heckernaut.png",
+    images: ["heck1.png", "heck2.png", "heck3.png"],
+    excerpt: "El proyecto que todavía no pudo ser.",
     content:
-      "Lava las camisetas con agua fría, evita el uso de secadora y plánchalas siempre del lado interno. Estos cuidados ayudan a preservar los colores, los estampados y la calidad de la tela durante muchos años.",
-  },
-  {
-    id: 6,
-    title: "La evolución del diseño en las camisetas de fútbol",
-    excerpt: "Desde el algodón hasta las telas de alto rendimiento.",
-    content:
-      "Con el paso del tiempo, las camisetas evolucionaron tanto en materiales como en tecnología. Hoy ofrecen mayor transpirabilidad, menor peso y un ajuste pensado para mejorar el rendimiento dentro del campo.",
-  },
-  {
-    id: 7,
-    title: "Las mejores camisetas para coleccionistas",
-    excerpt: "Conoce cuáles son las prendas más buscadas por los fanáticos.",
-    content:
-      "Las ediciones limitadas, las camisetas utilizadas en finales y los modelos históricos suelen ser las piezas más valiosas para cualquier colección. Su valor aumenta con el tiempo y conservan una gran carga emocional.",
-  },
-  {
-    id: 8,
-    title: "¿Original o réplica? Diferencias que debes conocer",
-    excerpt: "Aprende a identificar cada tipo de camiseta.",
-    content:
-      "Las camisetas originales están confeccionadas con materiales premium y tecnología utilizada por los jugadores, mientras que las réplicas ofrecen un excelente equilibrio entre calidad y precio para el uso diario.",
-  },
-  {
-    id: 9,
-    title: "Cinco consejos para comprar camisetas online",
-    excerpt: "Evita errores y compra con confianza.",
-    content:
-      "Antes de comprar, revisa la guía de talles, verifica la reputación del vendedor, observa fotografías reales, consulta la política de cambios y asegúrate de conocer los tiempos de envío.",
-  },
-  {
-    id: 10,
-    title: "Las tendencias en camisetas de fútbol para esta temporada",
-    excerpt: "Colores vibrantes, diseños clásicos y mucha personalidad.",
-    content:
-      "Las nuevas colecciones combinan inspiración retro con tecnologías modernas. Los diseños minimalistas, los detalles vintage y los patrones exclusivos marcan tendencia en las principales ligas del mundo.",
-  },
-  {
-    id: 11,
-    title: "Por qué las camisetas personalizadas son tan populares",
-    excerpt: "Lleva el nombre y número que más te representan.",
-    content:
-      "Personalizar una camiseta permite crear una prenda única. Ya sea con tu nombre, el de tu jugador favorito o una fecha especial, es una excelente forma de hacerla aún más significativa.",
-  },
-  {
-    id: 12,
-    title: "Cómo elegir el talle correcto",
-    excerpt: "Evita devoluciones siguiendo estas recomendaciones.",
-    content:
-      "Consulta siempre la tabla de medidas del fabricante y compara las dimensiones con una camiseta que ya tengas. Si buscas un ajuste más holgado, considera elegir una talla superior.",
+      "El último juego al que pude dedicarle una cantidad considerable de tiempo fue también mi proyecto favorito. Lamentablemente, debido a la falta de una definición clara de sus mecánicas y de un alcance bien establecido, <b>The Heckernaut</b> aún no ha podido ser completado.</p><p>La idea principal era crear un juego inspirado en <i>The Binding of Isaac,</i> pero con un enfoque más frenético y dinámico. En él, el protagonista, conocido simplemente como <i>The Sinner,</i> debe abrirse camino por el infierno utilizando armas de fuego para enfrentarse a demonios de apariencia poco convencional. Las balas viajan a gran velocidad, los enemigos son agresivos y el combate obliga al jugador a mantenerse en constante movimiento.</p><p>Fue el proyecto más ambicioso que inicié hasta ese momento, aunque solo pude dedicarle alrededor de tres meses antes de terminar la secundaria. A pesar de haber quedado inconcluso, el test room se encuentra disponible en mi página de itch.io junto con el resto de mis proyectos, como una muestra del concepto y de las mecánicas que llegué a desarrollar.",
+    gamelink: "https://saisoj.itch.io/theheckernaut",
   },
 ];
 
 export interface ArticleTemplate {
   id: number;
   title: string;
+  thumbnail: string;
+  logo: string;
+  images: string[];
   excerpt: string;
   content: string;
+  gamelink: string;
 }
