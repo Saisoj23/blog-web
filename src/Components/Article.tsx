@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import type { ArticleTemplate } from "./ARTICLES";
+import type { ArticleTemplate } from "./ARTICLES.ts";
 import { ChangeBlogContext } from "./ChangeSectionContext";
 import Button from "./Button";
 import Image from "./Image";

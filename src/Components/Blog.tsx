@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { ChangeBlogContext } from "./ChangeSectionContext";
-import { ARTICLES, type ArticleTemplate } from "./ARTICLES";
+import { ARTICLES, type ArticleTemplate } from "./ARTICLES.ts";
 import Article from "./Article";
 import ArticleCard from "./ArticleCard";
 
