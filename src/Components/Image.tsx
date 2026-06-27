@@ -1,5 +1,4 @@
 import React from "react";
-import useImage from "./UseImage";
 
 type ImageProps = {
   fileName: string;
@@ -13,22 +12,14 @@ const Image: React.FC<ImageProps> = ({
   className,
   ...rest
 }) => {
-  const { loading, error, image } = useImage(fileName);
-
-  if (error) return <>{alt}</>;
-
   return (
     <>
-      {loading ? (
-        <></>
-      ) : (
-        <img
-          className={`Image${className ? ` ${className}` : ""}`}
-          src={image || ""}
-          alt={alt}
-          {...rest}
-        />
-      )}
+      <img
+        className={`Image${className ? ` ${className}` : ""}`}
+        src={`https://raw.githubusercontent.com/Saisoj23/blog-web/refs/heads/main/src/assets/${fileName}`}
+        alt={alt}
+        {...rest}
+      />
     </>
   );
 };
