@@ -30,7 +30,7 @@ function App() {
   return (
     <ChangeSectionContext value={changeSection}>
       <div className="wrapper relative flex flex-col min-h-screen">
-        <div className="bg-pattern absolute h-full w-full z-[-10]"></div>
+        <div className="bg-pattern absolute h-full w-full -z-10"></div>
         <Header sections={sectionsNames} />
         {sections[sectionIndex]}
         <Footer></Footer>
